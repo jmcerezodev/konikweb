@@ -436,7 +436,7 @@ body::-webkit-scrollbar-thumb{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding-top: 20px;
+    padding: 20px 0 50px 0;
     /* background: red; */
 }
 
@@ -468,7 +468,7 @@ body::-webkit-scrollbar-thumb{
     border: 1px solid --color-general;
     border-radius: 5px;
     background-color: #e6f3fa;
-    margin-bottom: 25px;
+    margin-bottom: 40px;
     box-shadow: 0px 2px 15px 0px var(--color-general);
 }
  
@@ -506,7 +506,6 @@ display: flex;
 flex-direction: row;
 align-items: center;
 cursor: pointer;
-margin-bottom: 50px;
 }
 
 .btn-entradas:hover{
@@ -540,8 +539,13 @@ border: solid 2px #ff0000;
         height: 300px;
     }
 
+    .progress {
+        height: 30px;
+        width: 80%;
+    }
+
     .progress-bar-text {
-        font-size: 14px;
+        font-size: 12px;
     }
 }
 
