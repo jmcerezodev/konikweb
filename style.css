@@ -162,359 +162,479 @@ body::-webkit-scrollbar-thumb{
     /*////////////////////////////////////////////////////*/
     
 
-    /*///////////////// CABECERA ////////////////////////*/
+/*///////////////// CABECERA ////////////////////////*/
 
-    .contenedor-header{
+.contenedor-header{
 
        
-        background-image: url("images/fondoHeaderKonikWeb.png");
-        width: 100%;
-        height: 100vh;
-        background-size: cover;
-        background-repeat: no-repeat;
-        display: flex;
-        justify-content: center;
-        align-items: center;
+    background-image: url("images/fondoHeaderKonikWeb.png");
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     
-    }
+}
 
-    @media(max-width: 1200px){
+@media(max-width: 1200px){
 
-        .contenedor-header{
-            flex-direction: column;
-            background-position-x: 50%;
-        }
-        
-    }
-
-
-    /*///////////////////// FLECHA ABAJO////////////////////////////*/
-
-    @keyframes moviendrew {
-        0% {
-          transform: translateY(0px);
-        }
-        100% {
-          transform: translateY(20px);
-        }
-      }
-
-      .flecha-abajo i{
-
-        color: var(--color-general);
-        font-size: 30px;
-        animation-name: moviendrew;
-        animation-duration: 0.5s;
-        animation-iteration-count: infinite;
-        animation-direction: alternate;
-        position: absolute;
-        bottom: 50px;
-        
-
-    }
-      
-      @media(max-width: 1200px){
-
-        
-
-      }
-    
-
-    /*//////////////////////////////////////////////////////////////*/
-
-
-    /*//////////////////////// FIN CABECERA ////////////////////////*/
-    
-
-    /*/////////////////////////// SECCIONES ////////////////////////////*/
-
-    .seccion {
-        width: 100%;
-        height: auto;
-        border-top: 2px solid var(--color-general);
-        border-bottom: 2px solid var(--color-general);
-        display: flex;
+    .contenedor-header{
         flex-direction: column;
-        justify-content: start;
-        align-items: center;
+        background-position-x: 50%;
+    }
+        
+}
+
+
+/*///////////////////// FLECHA ABAJO////////////////////////////*/
+
+@keyframes moviendrew {
+    0% {
+        transform: translateY(0px);
+    }
+    100% {
+        transform: translateY(20px);
+    }
+}
+
+    .flecha-abajo i{
+
+    color: var(--color-general);
+    font-size: 30px;
+    animation-name: moviendrew;
+    animation-duration: 0.5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    position: absolute;
+    bottom: 50px;
         
 
-    }
+}
+
+    
+/*//////////////////////////////////////////////////////////////*/
+
+/*//////////////////////// FIN CABECERA ////////////////////////*/
+    
+
+/*/////////////////////////// SECCIONES ////////////////////////////*/
+
+.seccion {
+
+    width: 100%;
+    height: auto;
+    border-top: 2px solid var(--color-general);
+    border-bottom: 2px solid var(--color-general);
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+        
+}
 
 
-    /*/////////////////////// TITULOS SECCIONES//////////////////////////*/
+/*/////////////////////// TITULOS SECCIONES//////////////////////////*/
+
+.contenedor-titulo{
+
+    width: 50%;
+    height: 75px;
+    box-shadow: 0px 2px 15px 0px var(--color-general);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0px 0px 50px 50px;
+    background-color: var(--color-negro);
+}
+
+@media(max-width: 1200px){
 
     .contenedor-titulo{
-        width: 50%;
-        height: 75px;
-        box-shadow: 0px 2px 15px 0px var(--color-general);
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        border-radius: 0px 0px 50px 50px;
-        background-color: var(--color-negro);
-    }
-
-    @media(max-width: 1200px){
-
-        .contenedor-titulo{
-            width: 60%;
-            height: 50px;
+        width: 60%;
+        height: 50px;
             
-        }
+    }
 
-        .contenedor-titulo h1{
+    .contenedor-titulo h1{
 
-            font-size: 20px;
-
-        }
+        font-size: 20px;
 
     }
 
-    /*/////////////////////// BIOGRAFIA ///////////////////////*/
+}
+
+/*/////////////////////// BIOGRAFIA ///////////////////////*/
+
+#Biografia{
+
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("images/fondoBiografiaWeb.png");
+    background-size: cover;
+}
+
+.contenedor-biografia{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    margin: 150px;
+        
+}
+
+.texto-biografia{
+    width: 70%;
+}
+
+.texto-biografia p{
+    font-size: 22px;
+}
+
+.contenedor-lista{
+    width: 100%;
+    display: flex;
+    text-align: center;
+
+}
+
+.texto-biografia ul {
+    width: 200px;
+    color: white;
+    margin-top: 20px;
+        
+}
+
+.texto-biografia ul li{
+    color: white;
+    font-size: 20px;
+    list-style: none;
+       
+}
+
+    
+.span-kinok{
+    color: var(--color-general);
+}
+
+.punto-verde-lista{
+    color: var(--color-general);
+    font-weight: bold;
+    font-size: 20px;
+}
+
+   
+
+@media(max-width: 1200px){
 
     #Biografia{
-
-        background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("images/fondoBiografiaWeb.png");
-        background-size: cover;
+        background-position-x: 50%;
     }
 
     .contenedor-biografia{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 100%;
-        margin: 150px;
-        
 
+        margin: 50px;
     }
 
     .texto-biografia{
-        width: 70%;
+        width: 90%;
     }
 
     .texto-biografia p{
-        font-size: 22px;
-    }
-
-    .contenedor-lista{
-        width: 100%;
-        display: flex;
-        text-align: center;
-
-    }
-
-    .texto-biografia ul {
-        width: 200px;
-        color: white;
-        margin-top: 20px;
-        
+        font-size: 18px;
     }
 
     .texto-biografia ul li{
-        color: white;
-        font-size: 20px;
-        list-style: none;
-       
-    }
-
-    
-    .span-kinok{
-        color: var(--color-general);
-    }
-
-    .punto-verde-lista{
-        color: var(--color-general);
-        font-weight: bold;
-        font-size: 20px;
-    }
-
-   
-
-    @media(max-width: 1200px){
-
-        #Biografia{
-            background-position-x: 50%;
-        }
-
-        .contenedor-biografia{
-
-            margin: 50px;
-        }
-
-        .texto-biografia{
-            width: 90%;
-        }
-
-        .texto-biografia p{
-            font-size: 18px;
-        }
-
-        .texto-biografia ul li{
-            font-size: 18px;
+        font-size: 18px;
            
-        }
     }
+}
 
     
 
-    /*//////////////////////////////////////////////////////////*/
+/*//////////////////////////////////////////////////////////*/
 
-    /*///////////////// SECCION MUSICA////////////////////////*/
+/*///////////////// SECCION MUSICA////////////////////////*/
 
-    ::-webkit-scrollbar {
-        display: true;
-    }
+::-webkit-scrollbar {
+    display: true;
+}
 
-    #Musica {
-        width: 100%;
-        height: 100%;
-        background-color: var(--color-negro);
+#Musica {
+    width: 100%;
+    height: 100%;
+    background-color: var(--color-negro);
            
-    }
-    .contenedor-soundcloud{
-        width: 100%;
-        height: 100%;
-        margin: 50px auto;
-        display: flex;
-        grid-template-columns: 310px 310px 310px 310px;
-        align-items: center;
-        justify-content: center;
-    }
+}
 
-    .contenedor-items {
+.contenedor-soundcloud{
+    width: 100%;
+    height: 100%;
+    margin: 50px auto;
+    display: flex;
+    grid-template-columns: 310px 310px 310px 310px;
+    align-items: center;
+    justify-content: center;
+}
 
-        width: 100%;
-        height: 100%;
-        margin: 50px 10px;
-        display: grid;
-        gap: 20px;
-        grid-template-columns: 50%;
-        /* grid-template-columns: 310px 310px 310px 310px; */
-        grid-auto-rows: minmax(100px, 200px);
-        justify-content: center;
+.contenedor-items {
+
+    width: 100%;
+    height: 100%;
+    margin: 50px 10px;
+    display: grid;
+    gap: 20px;
+    grid-template-columns: 50%;
+    /* grid-template-columns: 310px 310px 310px 310px; */
+    grid-auto-rows: minmax(100px, 200px);
+    justify-content: center;
         
-    }
+}
 
-    .item-soundcloud {
-        width: 100%;
-        height: 100%;  
-        box-shadow: 4px 4px 9px black;         
-    }
+.item-soundcloud {
+    width: 100%;
+    height: 100%;  
+    box-shadow: 4px 4px 9px black;         
+}
 
-    @media(max-width: 1200px){
+@media(max-width: 1200px){
 
-        .contenedor-items{
-            /* grid-template-columns: repeat(2, 1fr);
-            grid-auto-rows: minmax(100px, auto); */
-            grid-template-columns: repeat(1, 1fr);
-            grid-auto-rows: minmax(100px, auto);
-            margin: 0 20px;
-            gap: 15px;
+    .contenedor-items{
+        /* grid-template-columns: repeat(2, 1fr);
+        grid-auto-rows: minmax(100px, auto); */
+        grid-template-columns: repeat(1, 1fr);
+        grid-auto-rows: minmax(100px, auto);
+        margin: 0 20px;
+        gap: 15px;
             
-        }
-
     }
+
+}
 
     
 
-    /*///////////////////////////////////////////////////*/
+/*///////////////////////////////////////////////////*/
+
+/*///////////////////////// SECCION EVENTOS //////////////////*/
+    
+#Eventos {
+    /* display: none; */
+}
+    
+.contenedor-eventos {
+    /* background-color: green; */
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    
+}
+    
+.cartel-evento {
+    width: 90%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20px;
+    /* background: red; */
+}
+
+.cuenta-atras{
+    width: 100%;
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+
+}
+
+.numeros-cuenta-atras{
+    color: red;
+}
+   
+.cartel{
+    background-image: url("images/ProximoEvento/flyer.jpg");
+    background-size: cover;
+    width: 500px;
+    height: 500px;
+    margin: 25px 0 45px 0;
+    box-shadow: 0px 2px 15px 0px var(--color-general);   
+}
 
 
-    /*///////////////////// SECCION RRSS /////////////////////////*/
+.progress {
+    height: 35px;
+    width: 50%;
+    border: 1px solid --color-general;
+    border-radius: 5px;
+    background-color: #e6f3fa;
+    margin-bottom: 25px;
+    box-shadow: 0px 2px 15px 0px var(--color-general);
+}
+ 
+.progress-bar {
+    height: 100%;
+    background: var(--color-general);
+    display: flex;
+    align-items: center;
+    transition: width 0.25s;
+    border-radius: 5px;
+}
+ 
+.progress-bar-text {
+    margin-left: 22px;
+    font-weight: bold;
+    color: #cce7f5;
+}
+
+
+
+.btn-entradas{
+
+font-family: Roboto, sans-serif;
+font-weight: 400;
+font-size: 22px;
+color: #fff;
+background-color: var(--color-negro);
+padding: 10px 30px;
+border: solid #ff0000 2px;
+box-shadow: 0px 2px 15px 0px var(--color-general);
+border-radius: 50px;
+transition : 1000ms;
+transform: translateY(0);
+display: flex;
+flex-direction: row;
+align-items: center;
+cursor: pointer;
+margin-bottom: 50px;
+}
+
+.btn-entradas:hover{
+
+transition : 1000ms;
+padding: 10px 50px;
+transform : translateY(-0px);
+color: #ffffff;
+border: solid 2px #ff0000;
+}
+
+.enlace-entradas{
+    text-decoration: none;
+}
+
+@media(max-width: 1200px){
+
+    .cuenta-atras p {
+        font-size: 16px;
+    }
+
+    .contenedor-cartel{
+        
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-auto-rows: minmax(100px, auto);
+    }
+
+    .cartel{
+        width: 300px;
+        height: 300px;
+    }
+
+    .progress-bar-text {
+        font-size: 14px;
+    }
+}
+
+/*///////////////////////////////////////////////////////////*/
+
+/*///////////////////// SECCION RRSS /////////////////////////*/
 
    
+
+.contenedor-rrss{
+
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: row;
+    gap: 30px;
+    padding: 10%;
+        
+
+}
+
+.contenedor-rrss i{
+    text-align: center;
+    font-size: 80px;
+    text-shadow: 4px 4px 9px black;
+        
+}
+
+.ico-instagram{
+    color: transparent;
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+    background: -webkit-radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+    background-clip: text;
+    -webkit-background-clip: text;
+}
+
+.ico-soundcloud{
+    color: var(--color-naranja);
+}
+
+.ico-youtube{
+    color: red;
+}
+
+@media(max-width: 1200px) {
+
+    #Social{
+        background-position-x: center;
+    }
 
     .contenedor-rrss{
-
         width: 100%;
-        height: auto;
-        display: flex;
-        justify-content: space-evenly;
-        align-items: center;
         flex-direction: row;
-        gap: 30px;
-        padding: 10%;
-        
-
+        justify-content: space-evenly;
+            
     }
 
     .contenedor-rrss i{
-        text-align: center;
-        font-size: 80px;
-        text-shadow: 4px 4px 9px black;
+        width: 100%;
+        font-size:50px;
+    }
         
-    }
+}
+/*///////////////////////////////////////////////////////////*/
 
-    .ico-instagram{
-        color: transparent;
-        background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
-        background: -webkit-radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
-        background-clip: text;
-        -webkit-background-clip: text;
-    }
+    
 
-    .ico-soundcloud{
-        color: var(--color-naranja);
-    }
+/*////////////////////////////// CONTACTO //////////////////////////*/
 
-    .ico-youtube{
-        color: red;
-    }
+#Contacto{
+    display: none;
+}
 
-    @media(max-width: 1200px) {
+/*///////////////////////////////////////////////////////////*/
 
-        #Social{
-            background-position-x: center;
-        }
+/*////////////////////// FIN SECCIONES /////////////////////////////*/
 
-        .contenedor-rrss{
-            width: 100%;
-            flex-direction: row;
-            justify-content: space-evenly;
-            ;
-        }
+/*///////////////// FOOTER ////////////////////////*/
 
-        .contenedor-rrss i{
-            width: 100%;
-            font-size:50px;
-        }
-        
-    }
-    /*///////////////////////////////////////////////////////////*/
+.contenedor-footer {
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
-    /*///////////////////////// SECCION EVENTOS //////////////////*/
+.contenedor-footer p{
+    color: white;
+}
 
-    #Eventos{
-        display: none;
-    }
-
-    /*///////////////////////////////////////////////////////////*/
-
-    /*////////////////////////////// CONTACTO //////////////////////////*/
-
-    #Contacto{
-        display: none;
-    }
-
-    /*///////////////////////////////////////////////////////////*/
-
-    /*////////////////////// FIN SECCIONES /////////////////////////////*/
-
-    /*///////////////// FOOTER ////////////////////////*/
-
-    .contenedor-footer {
-        height: 50px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .contenedor-footer p{
-        color: white;
-    }
-
-    /*///////////////////////////////////////////////////*/
+/*///////////////////////////////////////////////////*/
 
 
     
