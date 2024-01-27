@@ -3,7 +3,7 @@
     
     --degradado: linear-gradient(to bottom, #3FFF00 0%,#212121 5%,#212121 95%,#3FFF00 100%);
     --color-general: #ff0000;
-    --color-negro: #212121;
+    --color-negro: #000000;
     --color-naranja: #FF5500;
 }
 *{
@@ -276,8 +276,10 @@ body::-webkit-scrollbar-thumb{
 .contenedor-biografia{
 
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
+    width: 80%;
     height: 100%;
     margin: 150px;
         
@@ -314,6 +316,10 @@ body::-webkit-scrollbar-thumb{
 
     
 .span-kinok{
+    color: var(--color-general);
+}
+
+.titulos-bio{
     color: var(--color-general);
 }
 
