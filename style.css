@@ -446,6 +446,10 @@ body::-webkit-scrollbar-thumb{
     /* background: red; */
 }
 
+.fecha-evento{
+    font-size: 16px;
+}
+
 .cuenta-atras{
     width: 100%;
     margin-top: 10px;

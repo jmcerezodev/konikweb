@@ -68,11 +68,6 @@ $(document).ready(function(){
 
 
 
-
-      
-
-
-
     ////////////////////////////// FUNCIONES  /////////////////////////////////////////
 
     function clickBtnMenu(){
@@ -132,66 +127,32 @@ $(document).ready(function(){
 
      /////////////////////////////// FIN MENU NAVEGACION /////////////////////////////////
 
-     ////////////////////////////////////// Cuenta Atras //////////////////////////////////
-    
-     
 
-        //===
-        // VARIABLES
-        //===
-        const fecha = new Date('02/24/2024 0:01 AM');
-        // Render del DOM
-        const spanDias = document.querySelector('span#Dias');
-        const spanHoras = document.querySelector('span#Horas');
-        const spanMinutos = document.querySelector('span#Minutos');
-        const spanSegundos = document.querySelector('span#Segundos');
-        // Calculando Milisegundos
-        const milisegundosPorSegundo = 1000;
-        const milisegundosPorMinuto = milisegundosPorSegundo * 60;
-        const milisegundosPorHora = milisegundosPorMinuto * 60;
-        const milisegundosPorDia = milisegundosPorHora * 24
-
-        //===
-        // Funciones
-        //===
-
-        /**
-        * Método que actualiza la cuenta atrás y la muestra.
-        */
-        function updateCountdown() {
-            // Calculos
-            const NOW = new Date()
-            const duracion = fecha - NOW;
-            const diasRestantes = Math.floor(duracion / milisegundosPorDia);
-            const horasRestantes = Math.floor((duracion % milisegundosPorDia) / milisegundosPorHora);
-            const minutosRestantes = Math.floor((duracion % milisegundosPorHora) / milisegundosPorMinuto);
-            const segundosRestantes = Math.floor((duracion % milisegundosPorMinuto) / milisegundosPorSegundo);
-            
-
-            // Render
-            spanDias.textContent = diasRestantes;
-            spanHoras.textContent = horasRestantes;
-            spanMinutos.textContent = minutosRestantes;
-            spanSegundos.textContent = segundosRestantes;
-        }
-
-        //===
-        // Iniciar
-        //===
-        updateCountdown();
-        // Actualizar cada segundo
-        setInterval(updateCountdown, milisegundosPorSegundo);
+////////////////////////////////////// FECHA DE HOY //////////////////////////////////////
+    // Fecha
+    let textoFecha = $("#TextoFecha");
+    let fecha2 = new Date;
+    let meses = ["Enero","Febrero","Marzo","Abril","Mayo","Junio","Julio","Agosto","Septiembre","Octubre","Nobiembre","Diciembre"]
+    let dia = fecha2.getUTCDate();
+    let mes = fecha2.getMonth();
+    let ano = fecha2.getFullYear();
     
 
-    ///////////////////////////////// Fin Cuenta Atras ///////////////////////////////
+    textoFecha.html(dia + "/" + meses[mes] + "/" + ano); 
 
-    ///////////////////////////////// CopyRight ///////////////////////////////////////
+////////////////////////////////////// FECHA DE HOY //////////////////////////////////////
 
+
+    ////////////////////////////////////// COPYRIGHT //////////////////////////////////////
     // CopyRight
     let textoFooter = $("#TextoFooter");
     let date = new Date;
-    let ano = date.getFullYear();
-    textoFooter.html("KONIK® " + ano);
+    let year = date.getFullYear();
+    textoFooter.html("KINOK® " + year); 
+
+    console.log(year + "hola");
+
+    ////////////////////////////////////// FIN COPYRIGHT //////////////////////////////////////
 
      
 });
