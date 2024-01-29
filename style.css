@@ -61,6 +61,7 @@ body::-webkit-scrollbar-thumb{
     padding: 0 20px;
     border-bottom: 1px solid var(--color-general);
     position: fixed;
+    z-index: 5;
     /*display: none;*/
     
 }
