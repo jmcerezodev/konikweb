@@ -358,8 +358,12 @@ body::-webkit-scrollbar-thumb{
     color: var(--color-general);
 }
 
-.titulos-bio{
+.titulos-rojos{
     color: var(--color-general);
+}
+
+.titulos-verdes{
+    color: rgb(0, 250, 0);
 }
 
 .punto-verde-lista{
