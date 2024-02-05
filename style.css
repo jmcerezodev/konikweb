@@ -138,12 +138,12 @@ body::-webkit-scrollbar-thumb{
         justify-content: space-between;
         height: 60px;
         width: 100%;
-        padding: 0 5px;
+        padding: 0 20px;
         border-bottom: 1px solid var(--color-general);
     }
 
     .contenedor-logo-nav{
-        width: 40%;
+        width: 35%;
         
     }
 
