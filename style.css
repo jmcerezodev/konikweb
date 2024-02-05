@@ -57,7 +57,7 @@ body::-webkit-scrollbar-thumb{
     background: var(--color-negro);
     display: flex;  
     align-items: center;
-    justify-content: space-between; 
+    justify-content: space-between;
     padding: 0 20px;
     border-bottom: 1px solid var(--color-general);
     position: fixed;
@@ -66,8 +66,8 @@ body::-webkit-scrollbar-thumb{
     
 }
 
-.contenedor-logo-nav{
-    width: 50%;
+.contenedor-logo-nav {
+    width: 20%;
     height: auto;
 }
 
@@ -75,8 +75,29 @@ body::-webkit-scrollbar-thumb{
     width: 150px;
 }
 
-.menu-nav{
+/* iconos nav rrsss */
+
+.iconos_nav_rrss {
     width: 50%;
+    display: flex;
+    justify-content: center;
+}
+
+.iconos_nav_rrss a i {
+
+    font-size: 50px;
+    margin: 0 30px;
+    color: white;
+}
+
+.iconos_nav_rrss a i:hover {
+    color: red;
+}
+
+
+
+.menu-nav {
+    width: 40;
     display: flex;
     justify-content: end;
     cursor: pointer;
@@ -113,25 +134,40 @@ body::-webkit-scrollbar-thumb{
 @media(max-width: 1200px){
 
     .barra-nav{
-        flex-direction: column;
-        justify-content: center;
-        height: auto;
+        
+        justify-content: space-between;
+        height: 60px;
         width: 100%;
-        padding: 0;
+        padding: 0 5px;
         border-bottom: 1px solid var(--color-general);
     }
 
     .contenedor-logo-nav{
-        width: 100%;
-        display: flex;
-        justify-content: space-between;
-        padding: 20px;
+        width: 40%;
         
-        border-bottom: 1px solid var(--color-general);
+    }
+
+    .logo-nav{
+        width: 120px;
+    }
+
+    .iconos_nav_rrss {
+        width: 30%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .iconos_nav_rrss a i {
+
+        font-size: 30px;
+        margin: 0 10px;
     }
 
     .btn-menu-movil{
         display: flex;
+        align-items: center;
+        justify-content: center;
+        
     }
 
     .menu-nav {
@@ -156,6 +192,8 @@ body::-webkit-scrollbar-thumb{
     .menu-nav li a {
         width: 100%;
     }
+
+    
 
 
 }
@@ -569,6 +607,9 @@ border: solid 2px #ff0000;
 /*///////////////////// SECCION RRSS /////////////////////////*/
 
    
+#Social{
+    display: none;
+}
 
 .contenedor-rrss{
 
