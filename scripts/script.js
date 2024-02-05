@@ -51,19 +51,21 @@ $(document).ready(function(){
    
     $(window).scroll(function () { 
       
+        menuMovil.hide("1000");
+        estadoBtnMovil = false;
 
-         if (scrollY >= 0.1){
+        if (scrollY >= 0.1){
 
             
             flechaAbajo.css("display", "none");
            
 
-         }else{
+        }else{
            
              
-             flechaAbajo.css("display", "block");
+            flechaAbajo.css("display", "block");
            
-         }
+        }
     });
 
 
@@ -77,14 +79,14 @@ $(document).ready(function(){
          //Click en el boton del menu movil
          if(estadoBtnMovil == false){
 
-            menuMovil.show("fast");
+            menuMovil.show("1000");
             bordeBarraNav.css("border", "none");
             estadoBtnMovil = true;
             console.log(estadoBtnMovil);
 
         }else{
 
-            menuMovil.hide("fast");
+            menuMovil.hide("1000");
             estadoBtnMovil = false;
             console.log(estadoBtnMovil);
         }
