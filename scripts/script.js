@@ -53,6 +53,8 @@ $(document).ready(function(){
       
         menuMovil.hide("1000");
         estadoBtnMovil = false;
+        $("#Icono-menu").removeClass("fa-xmark");
+        $("#Icono-menu").addClass("fa-bars");
 
         if (scrollY >= 0.1){
 
