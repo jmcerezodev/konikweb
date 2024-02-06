@@ -91,9 +91,25 @@ $(document).ready(function(){
             console.log(estadoBtnMovil);
         }
 
-           
+        // Icono dependiendo si esta la cortina abierta o cerrada
 
+        if(estadoBtnMovil == true){
+            $("#Icono-menu").removeClass("fa-bars");
+            $("#Icono-menu").addClass("fa-xmark");
+            console.log("cambiando icono");
+        }else{
+            $("#Icono-menu").removeClass("fa-xmark");
+            $("#Icono-menu").addClass("fa-bars");
+        }
+
+
+    /////////////////////////////////////////////////////////
+           
     }
+
+    
+
+    
 
     //Mostar tipo menu dependiendo del ancho de la pantalla
     function mostrarTipoMenu(){
