@@ -134,12 +134,11 @@ $(document).ready(function(){
     function cerrarMenuClickEnlace(){
 
         if(anchoPantalla < 1200){
-
-        menuMovil.hide("fast");
-         estadoBtnMovil = false;
-        //console.log(estadoBtnMovil);
-        console.log("Click! enclace cerrar menu");
-        
+            
+            menuMovil.hide("fast");
+            estadoBtnMovil = false;
+            $("#Icono-menu").removeClass("fa-xmark");
+            $("#Icono-menu").addClass("fa-bars");        
         }
         
      }
