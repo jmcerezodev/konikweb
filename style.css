@@ -366,8 +366,9 @@ body::-webkit-scrollbar-thumb{
     color: var(--color-general);
 }
 
-.titulos-verdes{
+.titulos-verdes a{
     color: rgb(0, 250, 0);
+    text-decoration: none;
 }
 
 .punto-verde-lista{

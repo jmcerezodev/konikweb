@@ -167,7 +167,7 @@ $(document).ready(function(){
     let textoFooter = $("#TextoFooter");
     let date = new Date;
     let year = date.getFullYear();
-    textoFooter.html("KINOK® " + year); 
+    textoFooter.html("KONIK® " + year); 
 
     console.log(year + "hola");
 
