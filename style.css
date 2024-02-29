@@ -476,7 +476,7 @@ body::-webkit-scrollbar-thumb{
 /*///////////////////////// SECCION EVENTOS //////////////////*/
     
 #Eventos {
-    /* display: none; */
+     display: none; 
 }
     
 .contenedor-eventos {

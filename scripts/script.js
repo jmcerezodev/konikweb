@@ -50,11 +50,17 @@ $(document).ready(function(){
     let flechaAbajo = $(".flecha-abajo");
    
     $(window).scroll(function () { 
+
+        //Esconder menu al hacer scroll
+
+
       
-        menuMovil.hide("1000");
+        //menuMovil.hide("1000");
+
+        ///////////////////////////////
         estadoBtnMovil = false;
-        $("#Icono-menu").removeClass("fa-xmark");
-        $("#Icono-menu").addClass("fa-bars");
+        // $("#Icono-menu").removeClass("fa-xmark");
+        // $("#Icono-menu").addClass("fa-bars");
 
         if (scrollY >= 0.1){
 
